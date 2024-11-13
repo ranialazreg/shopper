@@ -1,0 +1,44 @@
+.item {
+    width: 200px; /* Largeur fixe pour chaque produit */
+    text-align: center;
+    margin-bottom: 20px; /* Espace en bas de chaque produit */
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 10px;
+    transition: transform 0.3s ease; /* Animation au survol */
+}
+
+.item:hover {
+    transform: scale(1.05); /* Zoom léger au survol */
+}
+
+.item img {
+    width: 100%; /* Assure que l'image occupe toute la largeur du conteneur */
+    height: auto;
+    border-radius: 8px;
+}
+
+.item p {
+    font-size: 14px; /* Taille réduite pour le nom du produit */
+    font-weight: 500;
+    color: #333;
+    margin: 6px 0;
+}
+
+.item-prices {
+    display: flex;
+    flex-direction: column; /* Affiche les prix en colonne */
+    gap: 4px; /* Espace entre les prix */
+    font-size: 12px; /* Taille réduite pour les prix */
+}
+
+.item-price-new {
+    color: #374151;
+    font-weight: 600;
+}
+
+.item-price-old {
+    color: #8c8c8c;
+    text-decoration: line-through;
+    font-weight: 500;
+}

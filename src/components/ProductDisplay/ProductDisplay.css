@@ -1,0 +1,177 @@
+/* Conteneur principal */
+.productdisplay {
+    display: flex;
+    padding: 15px; /* Réduction du padding global */
+    gap: 20px; /* Espace entre l'image principale et les informations */
+    max-width: 1000px;
+    margin: 20px auto; /* Ajout d'espace au-dessus et en dessous du conteneur principal */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Partie gauche : Images du produit */
+.productdisplay-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.productdisplay-img-list {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+}
+
+.productdisplay-img-list img {
+    width: 50px; /* Réduction de la taille des miniatures */
+    height: 50px;
+    object-fit: cover;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.productdisplay-img-list img:hover {
+    transform: scale(1.05);
+}
+
+.productdisplay-main-img {
+    width: 220px; /* Taille de l'image principale légèrement réduite */
+    height: auto;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* Partie droite : Informations du produit */
+.productdisplay-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 20px; /* Ajout d'espace en haut pour séparer l'image et le texte */
+}
+
+/* Titre du produit */
+.productdisplay-right h1 {
+    font-size: 20px; /* Taille du titre légèrement réduite */
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+}
+
+/* Évaluation par étoiles */
+.productdisplay-right-star {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.productdisplay-right-star img {
+    width: 16px;
+    height: 16px;
+}
+
+.productdisplay-right-star p {
+    margin: 0;
+    font-size: 12px;
+    color: #888;
+}
+
+/* Prix du produit */
+.productdisplay-right-prices {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.productdisplay-right-price-old {
+    font-size: 14px;
+    color: #888;
+    text-decoration: line-through;
+}
+
+.productdisplay-right-price-new {
+    font-size: 16px;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+/* Description */
+.productdisplay-right-description p {
+    font-size: 12px;
+    color: #666;
+    margin: 0;
+}
+
+/* Sélection de la taille */
+.productdisplay-right-size {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.productdisplay-right-size h1 {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.productdisplay-right-size-options {
+    display: flex;
+    gap: 8px;
+}
+
+.productdisplay-right-size-options div {
+    width: 26px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.productdisplay-right-size-options div:hover {
+    background-color: #f1f1f1;
+}
+
+
+button {
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background-color: #e74c3c;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #d62c1a;
+}
+
+/* Catégorie et tags */
+.productdisplay-right-category {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 8px; /* Réduction de l'espace en bas */
+}
+
+.productdisplay-right-category span {
+    font-weight: bold;
+}
+
+/* Espacement du haut de la page */
+.breadcrumb-container {
+    margin-top: 30px; /* Ajoute un espace au-dessus de la section breadcrumb */
+    text-align: center; /* Centre le texte du chemin */
+    font-size: 14px; /* Réduction de la taille de la police */
+    color: #666;
+}

@@ -1,0 +1,7 @@
+/* Espace au-dessus de la section breadcrumb */
+.breadcrumb-container {
+    margin-top: 50px; /* Espace au-dessus du breadcrumb, ajustable */
+    text-align: center; /* Centre le texte du chemin */
+    font-size: 14px;
+    color: #666;
+}

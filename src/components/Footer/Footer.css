@@ -1,0 +1,63 @@
+.footer {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Réduction supplémentaire de l'espacement global */
+    padding: 15px; /* Réduction du padding global */
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacement réduit pour le logo */
+}
+
+.footer_logo p {
+    color: #383838;
+    font-size: 24px; /* Taille de police réduite pour le logo */
+    font-weight: 700;
+}
+
+.footer-links {
+    display: flex;
+    list-style: none;
+    gap: 20px; /* Espacement réduit entre les liens */
+    color: #252525;
+    font-size: 14px; /* Taille de police plus petite pour les liens */
+}
+
+.footer-links li {
+    cursor: pointer;
+}
+
+.footer-social-icon {
+    gap: 10px; /* Espacement réduit entre les icônes sociales */
+    display: flex;
+}
+
+.footer-icons-container {
+    padding: 6px; /* Padding réduit pour les icônes */
+    padding-bottom: 4px;
+    background: #fbfbfb;
+    border: 1px solid #ebebeb;
+}
+
+.footer-copyright {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Espacement réduit entre les éléments de copyright */
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 15px; /* Marge en bas réduite */
+    color: #1a1a1a;
+    font-size: 14px; /* Taille de police réduite */
+}
+
+.footer-copyright hr {
+    width: 80%;
+    border: none;
+    border-radius: 8px;
+    height: 1.5px; /* Épaisseur réduite de la ligne */
+    background: #c7c7c7;
+}

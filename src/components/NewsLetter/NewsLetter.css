@@ -1,0 +1,103 @@
+.newsletter {
+    width: 80%;
+    max-width: 900px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    margin: 0 auto 100px;
+    background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+    gap: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Titre de la newsletter */
+.newsletter h1 {
+    color: #454545;
+    font-size: 48px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+}
+
+/* Texte de description */
+.newsletter p {
+    color: #454545;
+    font-size: 18px;
+    text-align: center;
+    max-width: 600px;
+}
+
+/* Conteneur pour input et bouton */
+.newsletter div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 730px;
+    height: 60px;
+    border-radius: 40px;
+    border: 1px solid #e3e3e3;
+    overflow: hidden;
+    background-color: white;
+}
+
+/* Champ input pour email */
+.newsletter input {
+    flex: 1;
+    padding: 0 20px;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    color: #616161;
+    font-size: 16px;
+}
+
+/* Bouton de souscription */
+.newsletter button {
+    width: 180px;
+    height: 100%;
+    background-color: #ff4141; /* Couleur rouge spécifique */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter button:hover {
+    background-color: #ff4141; /* Rouge légèrement plus foncé au survol */
+}
+
+/* Styles responsives pour écrans plus petits */
+@media (max-width: 768px) {
+    .newsletter {
+        padding: 20px;
+    }
+
+    .newsletter h1 {
+        font-size: 36px;
+    }
+
+    .newsletter p {
+        font-size: 16px;
+    }
+
+    .newsletter div {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .newsletter input {
+        width: 100%;
+        margin: 10px 0;
+        padding: 12px;
+    }
+
+    .newsletter button {
+        width: 100%;
+    }
+}
